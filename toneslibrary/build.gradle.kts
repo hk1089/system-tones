@@ -32,7 +32,18 @@ android {
         jvmTarget = "17"
     }
 }
-
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from (components["release"])
+                groupId = "com.hk1089"
+                artifactId = "system-tones"
+                version = "1.0.3"
+            }
+        }
+    }
+}
 dependencies {
 
     implementation(libs.androidx.appcompat)
