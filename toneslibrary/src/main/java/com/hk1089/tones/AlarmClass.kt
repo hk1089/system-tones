@@ -9,7 +9,7 @@ class AlarmClass {
     fun getAllSystemAlarmTones(context: Context): List<Pair<String, Uri>> {
         val alarmList = mutableListOf<Pair<String, Uri>>()
         val ringtoneManager = RingtoneManager(context)
-        ringtoneManager.setType(RingtoneManager.TYPE_RINGTONE) // Get alarms
+        ringtoneManager.setType(RingtoneManager.TYPE_ALARM) // Get alarms
 
         val cursor = ringtoneManager.cursor
         if (cursor != null && cursor.moveToFirst()) {
