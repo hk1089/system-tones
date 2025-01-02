@@ -45,7 +45,7 @@ dependencies {
 Retrieve all available notification tones with their titles and URIs:
 
 ```kotlin
-val tones = SystemTones.getNotificationTones(context)
+val tones = NotificationClass.getNotificationTones(context)
 tones.forEach { (title, uri) ->
     println("Tone Title: $title, URI: $uri")
 }
