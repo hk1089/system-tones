@@ -34,7 +34,7 @@ Add the library to your `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation 'com.github.hk1089:system-tones:1.0.3'
+    implementation 'com.github.hk1089:system-tones:1.0.4'
 }
 ```
 
