@@ -40,12 +40,34 @@ dependencies {
 
 ## Usage
 
-### Fetch System Tones
+### Fetch System Notification Tones
 
 Retrieve all available notification tones with their titles and URIs:
 
 ```kotlin
-val tones = NotificationClass.getNotificationTones(context)
+val tones = NotificationClass.getAllSystemNotificationTones(context)
+tones.forEach { (title, uri) ->
+    println("Tone Title: $title, URI: $uri")
+}
+```
+
+### Fetch System Ringtones
+
+Retrieve all available ringtones with their titles and URIs:
+
+```kotlin
+val tones = RingClass.getAllSystemRingtones(context)
+tones.forEach { (title, uri) ->
+    println("Tone Title: $title, URI: $uri")
+}
+```
+
+### Fetch System Alarm Tones
+
+Retrieve all available alarm tones with their titles and URIs:
+
+```kotlin
+val tones = AlarmClass.getAllSystemAlarmTones(context)
 tones.forEach { (title, uri) ->
     println("Tone Title: $title, URI: $uri")
 }
