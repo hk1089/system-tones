@@ -39,7 +39,7 @@ afterEvaluate {
                 from (components["release"])
                 groupId = "com.hk1089"
                 artifactId = "system-tones"
-                version = "1.0.3"
+                version = "1.0.4"
             }
         }
     }
